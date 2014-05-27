@@ -1,0 +1,105 @@
+/*Style CSS for JJWeb's ColorBox Template */
+
+/*Top NavBar Modification*/
+.navbar-default {
+	background-color: #00B6DE;
+	border-color: #00B6DE;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	letter-spacing: 5px;
+	font-size: 19px;
+	font-weight: 100;
+}
+.dropdown-menu{
+	background-color: #00B6DE;
+
+}
+.dropdown-menu>li>a {
+	color: #fff;
+	letter-spacing: 5px;
+	font-size: 19px;
+	font-weight: 100;
+}
+.navbar-brand{
+	height: 48px;
+	padding: 0px;
+}
+.logo{
+	height: inherit;
+}
+
+/*Body Modifications*/
+body{
+	font-family: 'EB Garamond', 'serif';
+	background-image:url('../images/background.png');
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+
+/*Footer Modifications*/
+#footer{
+	height: 40px;
+	background-color: #00B6DE;
+}
+
+/* Customize based on container */
+@media (min-width: 768px) {
+  	.navbar{
+		min-height: 100px;
+	}
+	.navbar-nav>li>a {
+		padding-top: 75px;
+		padding-bottom: 18px;
+	}
+	.navbar-brand{
+		height: 90px;
+		margin-top: 12px;
+	}
+  	.container {
+    	max-width: 1080px;
+  	}
+  	body > .container {
+		padding-top: 137px;
+	}
+}
+
+/* Other */
+.transparent {
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	width: 100%; 
+		
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=80);
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.8;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.8;
+    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.8;
+}
+
+/* Flexslider */
+.flex-direction-nav a:before{
+	font-family: "FontAwesome";
+	content: '\f0a8';
+	font-style: normal;
+}
+.flex-direction-nav a.flex-next:before{
+	content: "\f0a9";
+}
